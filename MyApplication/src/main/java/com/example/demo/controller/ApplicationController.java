@@ -51,4 +51,9 @@ public String showAllUsers(HttpServletRequest request)
 	request.setAttribute("mode","ALL_USERS");
 	return "welcomepage";
 }
+public String deleteusers()
+{
+	return "welcomepage";
+}
+
 }
