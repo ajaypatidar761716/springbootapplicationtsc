@@ -1,23 +1,31 @@
 package com.example.demo.model;
 
+
+import javax.annotation.Generated;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 
 
 @Entity
-@Table(name="mytable")
+@Table(name="mytabe")
 public class User 
 {
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
   private int id;
   private String firstname;
   private String lastname;
   private int age;
   private String address;
   
-  
+  public User() 
+  {
+	
+}
 public User(String firstname, String lastname, int age, String address) {
 	super();
 	this.firstname = firstname;
